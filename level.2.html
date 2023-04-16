@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局 CSS</title>
+</head>
+<style>
+    div {
+        display:flex;
+        /* div中小span 以X轴方向排列 */
+        flex-direction: row;/*不写也行 因为是默认 X轴方向 */
+        
+        
+        background-color: blanchedalmond;
+    }
+    div span{
+        text-align: center;
+        background-color: rgb(170, 20, 193);
+        width: 200px;
+        height:200px;
+    }
+
+    p{
+        display:flex;
+        flex-direction: row;
+        width: 60%;
+        height:150px;
+        background-color: rgb(202, 233, 26);
+        /* margin: 1000px auto; */
+    }
+    p span{
+        flex:1;
+    }
+    pp{
+        display:flex;
+        background-color: brown;
+    }
+    pp span{
+        background-color: blue;
+        flex:1;
+    }
+    pp span:nth-child(2)
+    {
+        flex:2;
+    }
+</style>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+    <p>
+        <span>11</span>
+        <span>22</span>
+       
+
+    </p>
+
+        
+    <p class="pp">
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
+            
+    </p>
+    
+    <!-- 啊啊啊 -->
+</body>
+</html>
