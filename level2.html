@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level2</title>
+    <style>
+        /* 用grid布局用父模块控制子模块 */
+        .grid-container{
+            display: grid;
+            /* 自动分布为6个横向的块  搜的auto：列的大小由容器的大小和列中网格元素内容的大小决定*/
+            grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+        }
+        .number-two-div{
+            display: flex;
+            align-items: stretch;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+        <div class="grid-item"><img src="https://blog.haiya360.com/usr/uploads/2020/07/1689695513.gif"></div>
+    
+    </div> 
+        <div calss="number-two-div">
+            <span ><img src="https://www.2008php.com/2015_Website_appreciate/2015-07-08/20150708214812.jpg"></span>
+            <span ><img src="https://www.2008php.com/2015_Website_appreciate/2015-07-08/20150708214812.jpg"></span>
+        </div>
+    </div>
+
+</body>
+</html>
